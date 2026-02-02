@@ -36,7 +36,6 @@ def registered_user(auth_api):
     token = user.get("accessToken")
     if token:
         resp_del = auth_api.delete_user(token)
-        # Если начнёт флапать на окружении, можно заменить на: assert resp_del.status_code < 500
         assert resp_del.status_code in (200, 202, 204), f"Delete user failed: {resp_del.status_code} {resp_del.text}"
 
 
