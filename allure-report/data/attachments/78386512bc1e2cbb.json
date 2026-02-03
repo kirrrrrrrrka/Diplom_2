@@ -1,0 +1,9 @@
+{
+  "success": true,
+  "user": {
+    "email": "test_608cf5495d7a4784ae46081597622541@yandex.ru",
+    "name": "User_608cf549"
+  },
+  "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5ODA4Y2Y4OTg0MjcwMDAxYmU0Mjk3MiIsImlhdCI6MTc3MDAzMjM3NiwiZXhwIjoxNzcwMDMzNTc2fQ.eH7pyyJcXF4kADMbu1pY6S-l-SwXmh85fZvA1vdoHUI",
+  "refreshToken": "a8fb367e4b61a01cfb720afdff8b3a7c98f4987f42364bdfd2dcebcfe17bf61279cd1b5be6c5e110"
+}

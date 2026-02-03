@@ -1,0 +1,9 @@
+{
+  "success": true,
+  "user": {
+    "email": "test_9b7a0d4d2f784e368d0765d0d432a70f@yandex.ru",
+    "name": "User_9b7a0d4d"
+  },
+  "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5ODBhMzYzOTg0MjcwMDAxYmU0MmE3YiIsImlhdCI6MTc3MDAzODExNSwiZXhwIjoxNzcwMDM5MzE1fQ.jQhKflLbdck6LBG0t_eRl3MKNk7G93NH4u-XHWmRe2E",
+  "refreshToken": "5b9414365c7a8e30000d945f9ebf635ac2aa1ec8c17254df92436fa0d217d5dfe7bcc3d2a4364a6e"
+}

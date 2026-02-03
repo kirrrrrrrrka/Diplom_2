@@ -9,7 +9,6 @@ build/
 venv/
 .pytest_cache/
 allure-results/
-allure-report/
 .vscode/
 .idea/
 .DS_Store
