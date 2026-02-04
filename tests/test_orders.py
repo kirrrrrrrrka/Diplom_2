@@ -15,16 +15,15 @@ class TestOrders:
         assert isinstance(body["order"].get("number"), int)
         assert "name" in body
 
-    @allure.title("Создать заказ без авторизации — успешно")
-    def test_create_order_without_authorization_success(self, orders_api, ingredient_ids):
+    @allure.title("Создать заказ без авторизации — ошибка")
+    def test_create_order_without_authorization_fails(self, orders_api, ingredient_ids):
         resp = orders_api.create_order(ingredient_ids[:2])
-        assert resp.status_code == 200
+        assert resp.status_code == 401
 
         body = resp.json()
-        assert body.get("success") is True
-        assert isinstance(body.get("order"), dict)
-        assert isinstance(body["order"].get("number"), int)
-        assert "name" in body
+        assert body.get("success") is False
+        assert body.get("message") == "You should be authorised"
+
 
     @allure.title("Создать заказ с ингредиентами — успешно")
     def test_create_order_with_ingredients_success(self, orders_api, ingredient_ids):
